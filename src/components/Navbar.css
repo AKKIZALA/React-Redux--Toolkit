@@ -1,0 +1,108 @@
+*{
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    background: transparent;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.logo{
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    width: 60rem;
+}
+.navigation{
+    width: 40rem;
+    font-size: 1.2rem;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul li{
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+.icon{
+    display: none;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+
+@media (min-width:1200px){
+    .logo{
+        margin-left: 7rem;
+        width: 85%;
+    }
+    li a {
+        font-size: 1.5rem;
+    }
+    .navigation{
+        width: 67%;
+    }
+}
+/* ///////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width:1005px){
+    .logo{
+        width: 75%;
+    }
+    .navigation{
+        width: 50%;
+    }
+
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width:748px){
+    .container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navigation{
+        display: none;
+    }
+    .logo{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .icon{
+        display: block;
+        margin-right: 3rem;
+    }
+    .icon span i{
+        font-size: 2.5rem;
+    }
+}
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width:348px){
+    .logo h3{
+        text-align: center;
+    }
+    .icon span i{
+        font-size: 2.5rem;
+        margin-right: -2.4rem;
+    }
+    .logo h3{
+        text-align: center;
+    }
+}
